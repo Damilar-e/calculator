@@ -19,10 +19,8 @@ body{
     background-color: #ecf0f3;
 }
 
+
 .calc{
-    border: 10px groove rgba(19, 15, 15, 0.5);
-    width: 22%;
-    margin-left: 40%;
     box-shadow: 6px 6px 13px #fff 6px 6px 13px rgba(0, 0, 0, .16);
     border-radius: 28px;
     padding: 16px;
