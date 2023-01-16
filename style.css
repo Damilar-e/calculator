@@ -25,6 +25,9 @@ body{
     border-radius: 28px;
     padding: 16px;
     display: grid;
+    border: 2px solid black;
+    max-width: fit-content;
+    margin: auto;
     grid-template-columns: repeat(4,66px); 
 }
 
