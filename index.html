@@ -9,28 +9,93 @@
 <body>
     <div class="containter">
         <div class="calc">
-            <input type="text" id="inputext" placeholder="0">
+            <input type="text" id="score" placeholder="0">
+            <button onclick="one()">1</button>
+            <button onclick="two()">2</button>
+            <button onclick="three()">3</button>
+            <button onclick="plus()">+</button>
+            <button onclick="four()">4</button>
+            <button onclick="five()">5</button>
+            <button onclick="six()">6</button>
+            <button onclick="minus()">-</button>
+            <button onclick="seven()">7</button>
+            <button onclick="eight()">8</button>
+            <button onclick="nine()">9</button>
+            <button onclick="mult()">*</button>
             <button onclick="clr()">C</button>
-            <button onclick="del()">DEL</button>
-            <button onclick="calculate('%')">%</button>
-            <button onclick="calculate('/')">/</button>
-            <button onclick="calculate(7)" >7</button>
-            <button onclick="calculate(8)">8</button>
-            <button onclick="calculate(9)">9</button>
-            <button onclick="calculate('*')">*</button>
-            <button onclick="calculate(4)">4</button>
-            <button onclick="calculate(5)">5</button>
-            <button onclick="calculate(6)">6</button>
-            <button onclick="calculate('-')">-</button>
-            <button onclick="calculate(1)">1</button>
-            <button onclick="calculate(2)">2</button>
-            <button onclick="calculate(3)">3</button>
-            <button onclick="calculate('+')">+</button>
-            <button onclick="calculate('.')">.</button>
-            <button onclick="calculate(0)">0</button>
-            <button class="equal" onclick="estimate()">=</button>
+            <button onclick="zero()">0</button>
+            <button onclick="div()">/</button>
+            <button  onclick="equal()">=</button>
         </div>
     </div>
-    <script src="cal.js"></script>
+    
+    
+        <script>
+                function one(){
+                document.getElementById('score').value += 1;
+                }
+
+                function two(){
+                document.getElementById('score').value += 2;
+                }
+
+                function three(){
+                document.getElementById('score').value += 3;
+                }
+
+                function four(){
+                document.getElementById('score').value += 4;
+                }
+
+                function five(){
+                document.getElementById('score').value += 5;
+                }
+
+                function six(){
+                document.getElementById('score').value += 6;
+                }
+
+                function seven(){
+                document.getElementById('score').value += 7;
+                }
+
+                function eight(){
+                document.getElementById('score').value += 8;
+                }
+
+                function nine(){
+                document.getElementById('score').value += 9;
+                }
+
+                function zero(){
+                document.getElementById('score').value += 0;
+                }
+
+                function equal(){
+                document.getElementById('score').value=eval(document.getElementById('score').value)
+                }
+
+                function clr(){
+                document.getElementById('score').value=''
+                }
+
+                function plus(){
+                document.getElementById('score').value+='+'
+                }
+
+                function minus(){
+                document.getElementById('score').value+='-'
+                }
+
+                function mult(){
+                document.getElementById('score').value+='*'
+                }
+
+                function div(){
+                document.getElementById('score').value+='/'
+                }
+            </script>
+           
+    <!-- <script src="cal.js"></script> -->
 </body>
 </html>
